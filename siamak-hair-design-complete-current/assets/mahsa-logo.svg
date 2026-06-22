@@ -1,0 +1,10 @@
+<svg width="180" height="48" viewBox="0 0 180 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Mahsa Hair Studio logo</title>
+  <desc id="desc">A simple professional salon logo with an S monogram and hair design wordmark.</desc>
+  <circle cx="24" cy="24" r="21.5" fill="#171514" stroke="#171514"/>
+  <path d="M31.4 14.5C29.7 12.9 27.3 12 24.4 12C20.3 12 17.2 14.1 17.2 17.3C17.2 20.3 19.6 21.7 24.1 22.9C28.7 24.1 31.4 25.9 31.4 29.9C31.4 34 27.8 36.4 23.4 36.4C19.9 36.4 16.9 35.1 14.8 32.7" stroke="#FFF9F3" stroke-width="2.3" stroke-linecap="round"/>
+  <path d="M15.3 15.9C20.2 8.7 31.7 8.9 35.8 17.2" stroke="#C9A087" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M33.4 32.4C28.4 39.8 17.1 39.3 12.4 31.2" stroke="#C9A087" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="58" y="22" fill="#171514" font-family="Cormorant Garamond, Georgia, serif" font-size="22" font-weight="600" letter-spacing="0">Mahsa</text>
+  <text x="58" y="36" fill="#756F69" font-family="Manrope, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.1">HAIR DESIGN TORONTO</text>
+</svg>
