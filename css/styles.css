@@ -758,118 +758,73 @@ img, .card-img { max-width: 100%; }
   .book-embed{ max-width: 620px; height: 920px; }
 }
 
-/* ===== Inverted section palette (hero remains unchanged) ===== */
+/* ===== Neutral sections; footer keeps the navy treatment ===== */
 .approach-strip,
+.approach-services,
 .location-strip,
+.services-section,
 .gallery-section,
+.values-section,
 .team-section,
+.testimonial-section,
 .booking-section,
-.site-footer {
+.contact-section {
   background: var(--surface);
   color: var(--accent);
 }
-
+.approach-strip-inner,
+.location-strip-inner {
+  padding: 0;
+  background: transparent;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
 .approach-strip .eyebrow,
 .location-strip .eyebrow,
 .gallery-intro .eyebrow,
-.team-intro .eyebrow {
-  color: rgba(0,34,49,0.62);
-}
+.team-intro .eyebrow { color: rgba(0,34,49,0.62); }
 .approach-strip p:last-child,
 .location-strip p:not(.eyebrow),
 .gallery-intro p:not(.eyebrow),
 .team-intro p:not(.eyebrow),
 .team-card .bio,
 .team-join p,
-.booking-section .cta-box p {
-  color: rgba(0,34,49,0.8);
-}
+.booking-section .cta-box p { color: rgba(0,34,49,0.8); }
 .booking-section .cta-box { color: var(--accent); }
-.location-strip { border-top-color: rgba(0,34,49,0.12); }
-.location-strip .btn-white { background: var(--accent); border-color: var(--accent); color: var(--surface); }
-.gallery-card img,
-.team-photo,
-.team-avatar { border-color: rgba(0,34,49,0.15); }
-.gallery-section .round-btn,
-.team-section .round-btn { border-color: rgba(0,34,49,0.3); color: var(--accent); }
-.gallery-section .chevron,
-.team-section .chevron { border-color: var(--accent); }
-.gallery-section .dot,
-.team-section .dot { background: rgba(0,34,49,0.22); }
-.gallery-section .dot.active,
-.team-section .dot.active { background: var(--accent); }
-.team-card .role { color: rgba(0,34,49,0.62); }
-.team-section .btn-outline { color: var(--accent); border-color: rgba(0,34,49,0.3); }
-.team-section .btn-outline:hover { background: rgba(0,34,49,0.06); }
-
-.services-section,
-.values-section,
-.testimonial-section,
-.contact-section {
-  background: var(--accent);
-  color: var(--surface);
-}
-.approach-services { background: var(--surface); color: var(--accent); }
-.services-section .from-label,
-.testimonial-intro p,
-.contact-item p {
-  color: rgba(251,247,242,0.76);
-}
-.services-section .round-btn,
-.testimonial-section .round-btn { border-color: rgba(251,247,242,0.4); color: var(--surface); }
-.services-section .chevron,
-.testimonial-section .chevron { border-color: var(--surface); }
-.services-section .dot,
-.testimonial-section .dot { background: rgba(251,247,242,0.28); }
-.services-section .dot.active,
-.testimonial-section .dot.active { background: var(--surface); }
-.contact-icon,
-.contact-item a.link { color: var(--surface); }
-.contact-map { border-color: rgba(251,247,242,0.18); }
-
-.site-footer .footer-box { color: var(--accent); }
-.site-footer .footer-brand .logo img,
-.site-footer .footer-credit img { filter: none; }
-.site-footer .footer-brand .info .label { color: rgba(0,34,49,0.62); }
-.site-footer .footer-brand .info .value { color: rgba(0,34,49,0.8); }
-.site-footer .footer-bottom { border-top-color: rgba(0,34,49,0.15); }
-.site-footer .footer-credit { color: rgba(0,34,49,0.62); }
-
-/* ===== Wood-backed Approach and Location strips ===== */
-.approach-strip,
-.location-strip {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  background: var(--surface);
-  color: var(--surface);
-}
-.approach-strip::before,
-.location-strip::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background: url('../assets/wood-strip-background.png') center / cover no-repeat;
-  opacity: 0.55;
-}
-.approach-strip-inner,
-.location-strip-inner {
-  position: relative;
-  z-index: 1;
-  padding: clamp(1.5rem,3vw,2.25rem);
-  background: rgba(8,8,8,0.12);
-  border: 0;
-  box-shadow: none;
-  -webkit-backdrop-filter: blur(4px) brightness(93%);
-  backdrop-filter: blur(4px) brightness(93%);
-}
-.approach-strip .eyebrow,
-.location-strip .eyebrow { color: rgba(251,247,242,0.72); }
-.approach-strip p:last-child,
-.location-strip p:not(.eyebrow) { color: rgba(251,247,242,0.86); }
 .location-strip .btn-white {
-  background: var(--surface);
-  border-color: var(--surface);
-  color: var(--accent);
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--surface);
 }
+.services-section .from-label,
+.team-card .role,
+.testimonial-intro p,
+.contact-item p { color: rgba(0,34,49,0.62); }
+.gallery-section .round-btn,
+.team-section .round-btn,
+.services-section .round-btn,
+.testimonial-section .round-btn { border-color: rgba(0,34,49,0.3); color: var(--accent); }
+.gallery-section .chevron,
+.team-section .chevron,
+.services-section .chevron,
+.testimonial-section .chevron { border-color: var(--accent); }
+.gallery-section .dot,
+.team-section .dot,
+.services-section .dot,
+.testimonial-section .dot { background: rgba(0,34,49,0.22); }
+.gallery-section .dot.active,
+.team-section .dot.active,
+.services-section .dot.active,
+.testimonial-section .dot.active { background: var(--accent); }
+.contact-icon,
+.contact-item a.link { color: var(--accent); }
+.team-section .btn-outline { color: var(--accent); border-color: rgba(0,34,49,0.3); }
+
+.site-footer { background: var(--accent); color: var(--surface); }
+.site-footer .footer-box { color: var(--surface); }
+.site-footer .footer-brand .logo img,
+.site-footer .footer-credit img { filter: invert(1); }
+.site-footer .footer-brand .info .label { color: rgba(251,247,242,0.72); }
+.site-footer .footer-brand .info .value { color: rgba(251,247,242,0.86); }
+.site-footer .footer-bottom { border-top-color: rgba(251,247,242,0.16); }
+.site-footer .footer-credit { color: rgba(251,247,242,0.62); }
