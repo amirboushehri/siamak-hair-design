@@ -409,6 +409,9 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
 .gallery-section .dot { background: rgba(251,247,242,0.28); }
 .gallery-section .dot.active { background: var(--surface); }
 
+/* Give the booking subheader room before the embedded form begins. */
+.booking-section .book-embed { margin-top: 32px; }
+
 /* ===== Values ===== */
 .values-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(320px,1fr)); gap: 32px; align-items: stretch; }
 .values-col { display: flex; flex-direction: column; gap: 32px; height: 100%; }
