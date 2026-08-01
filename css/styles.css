@@ -267,6 +267,30 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
   color: var(--accent);
   border-color: var(--accent);
 }
+.approach-panel {
+  background: var(--accent);
+  color: var(--surface);
+}
+.approach-box .approach-panel .icon-circle {
+  color: var(--surface);
+  border-color: var(--surface);
+}
+.approach-panel .btn-primary {
+  background: var(--surface);
+  border-color: var(--surface);
+  color: var(--accent);
+}
+.approach-panel .btn-primary:hover {
+  background: #FFFFFF;
+  border-color: #FFFFFF;
+  color: var(--accent-hover);
+}
+.approach-panel .view-link {
+  color: var(--surface);
+}
+.approach-box .approach-panel .chevron {
+  border-color: var(--surface);
+}
 
 /* ===== Location ===== */
 .location-section .wrap { max-width: 560px; text-align: center; }
