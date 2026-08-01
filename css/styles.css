@@ -838,14 +838,25 @@ img, .card-img { max-width: 100%; }
 /* ===== Wood-backed Approach and Location strips ===== */
 .approach-strip,
 .location-strip {
-  background-color: #51220f;
-  background-image: url('../assets/wood-strip-background.png');
-  background-position: center;
-  background-size: cover;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--surface);
   color: var(--surface);
+}
+.approach-strip::before,
+.location-strip::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: url('../assets/wood-strip-background.png') center / cover no-repeat;
+  opacity: 0.55;
 }
 .approach-strip-inner,
 .location-strip-inner {
+  position: relative;
+  z-index: 1;
   padding: clamp(1.5rem,3vw,2.25rem);
   background: rgba(8,8,8,0.12);
   border: 0;
