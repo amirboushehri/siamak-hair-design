@@ -867,3 +867,13 @@ a.btn[href="#book"]:hover {
   border-color: #FFFFFF;
   color: var(--accent-hover);
 }
+
+/* Full navy Gallery strip. */
+.gallery-section { background: var(--accent); color: var(--surface); }
+.gallery-intro .eyebrow { color: rgba(251,247,242,0.72); }
+.gallery-intro p:not(.eyebrow) { color: rgba(251,247,242,0.86); }
+.gallery-card img { border-color: rgba(251,247,242,0.18); }
+.gallery-section .round-btn { border-color: rgba(251,247,242,0.4); color: var(--surface); }
+.gallery-section .chevron { border-color: var(--surface); }
+.gallery-section .dot { background: rgba(251,247,242,0.28); }
+.gallery-section .dot.active { background: var(--surface); }
