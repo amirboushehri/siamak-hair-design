@@ -739,17 +739,20 @@ html, body { max-width: 100%; overflow-x: hidden; }
 img, .card-img { max-width: 100%; }
 
 /* embedded booking */
+.booking-section { background: var(--accent); color: var(--surface); }
+.booking-section .cta-box { padding: 0; border: 0; background: transparent; color: var(--surface); }
+.booking-section .cta-box p { color: rgba(251,247,242,0.86); }
 .book-embed {
   display: block;
   width: 100%;
   max-width: 780px;   /* horizontal / landscape on desktop */
-  height: 620px;
+  height: 760px;
   margin: 0 auto;
   border: none;
   border-radius: 16px;
-  background: transparent;
+  background: var(--surface);
 }
 /* mobile: stay vertical */
 @media(max-width:600px){
-  .book-embed{ max-width: 620px; height: 820px; }
+  .book-embed{ max-width: 620px; height: 920px; }
 }
