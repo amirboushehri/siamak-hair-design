@@ -209,6 +209,18 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
   position: relative; z-index: 2; min-height: 92vh; min-height: 92dvh; display: flex; flex-direction: column;
   align-items: center; justify-content: center; padding: 64px 5%; text-align: center;
 }
+.hero-copy-panel {
+  width: min(720px,100%);
+  padding: clamp(2rem,4vw,3.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0,35,54,0.38);
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 0 24px 64px rgba(0,2,3,0.2);
+  -webkit-backdrop-filter: blur(18px) saturate(115%);
+  backdrop-filter: blur(18px) saturate(115%);
+}
 .hero-content .eyebrow { color: #FFFFFF; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.85; }
 .hero-content h1 { color: #FFFFFF; font-size: clamp(2.5rem,5vw,3.5rem); line-height: 1.2; margin-bottom: 24px; max-width: 720px; }
 .hero-content p { color: #FFFFFF; font-size: clamp(1rem,1.4vw,1.125rem); max-width: 560px; line-height: 1.6; }
@@ -612,6 +624,12 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
   .approach-strip h2 { max-width: 18ch; }
   .approach-strip p:last-child { max-width: 52ch; }
 
+  .hero-copy-panel {
+    padding: 28px 20px;
+    background: rgba(0,35,54,0.46);
+    -webkit-backdrop-filter: blur(14px) saturate(110%);
+    backdrop-filter: blur(14px) saturate(110%);
+  }
   .hero-content h1 { max-width: 100%; }
   .hero-tabs { gap: 6px; bottom: 24px; }
   .hero-tab { padding: 12px 4px 10px; font-size: 0.75rem; }
