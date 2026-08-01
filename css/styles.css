@@ -226,6 +226,40 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
 .hero-tab-bar { display: block; position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: rgba(255,255,255,0.2); }
 .hero-tab-fill { display: block; height: 100%; background: #FFFFFF; width: 0%; }
 
+/* ===== Approach strip ===== */
+.approach-strip {
+  scroll-margin-top: 72px;
+  background: var(--accent);
+  color: var(--surface);
+  padding: clamp(1.75rem,3vw,2.75rem) 5%;
+}
+.approach-strip-inner {
+  width: min(1280px,100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(120px,0.55fr) minmax(280px,1.15fr) minmax(360px,1.6fr);
+  align-items: center;
+  gap: clamp(1.5rem,3vw,3.5rem);
+}
+.approach-strip .eyebrow {
+  margin: 0;
+  color: rgba(251,247,242,0.72);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.approach-strip h2 {
+  font-size: clamp(1.65rem,3vw,2.35rem);
+  line-height: 1.15;
+}
+.approach-strip p:last-child {
+  color: rgba(251,247,242,0.86);
+  font-size: clamp(0.95rem,1.25vw,1.1rem);
+  line-height: 1.6;
+}
+.approach-services {
+  padding-top: clamp(3rem,5vw,5rem);
+}
+
 /* ===== Approach tabs ===== */
 .approach-box { border: 1px solid rgba(0,2,3,0.15); background: var(--panel); display: grid; grid-template-columns: minmax(220px,1fr) 1.6fr; overflow: hidden; }
 .approach-tablist { display: flex; flex-direction: column; border-right: 1px solid rgba(0,2,3,0.15); background: var(--surface); }
@@ -545,6 +579,11 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
   .navbar.menu-open .mobile-menu { display: flex; }
   .navbar.menu-open { box-shadow: 0 8px 24px rgba(0,2,3,0.12); }
 
+  .approach-strip-inner {
+    grid-template-columns: minmax(100px,0.5fr) minmax(220px,1fr) minmax(280px,1.35fr);
+    gap: 24px;
+  }
+
   .approach-box { grid-template-columns: 1fr; }
   .approach-tablist { flex-direction: row; flex-wrap: wrap; border-right: none; border-bottom: 1px solid rgba(0,2,3,0.15); }
   .approach-tab { border-bottom: none; flex: 1 1 auto; text-align: center; padding: 16px 12px; }
@@ -562,6 +601,17 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
 
 /* ---- Phones (<=767px) ---- */
 @media (max-width: 767px) {
+  .approach-strip {
+    scroll-margin-top: 64px;
+    padding-block: 28px;
+  }
+  .approach-strip-inner {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .approach-strip h2 { max-width: 18ch; }
+  .approach-strip p:last-child { max-width: 52ch; }
+
   .hero-content h1 { max-width: 100%; }
   .hero-tabs { gap: 6px; bottom: 24px; }
   .hero-tab { padding: 12px 4px 10px; font-size: 0.75rem; }
