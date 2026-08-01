@@ -828,3 +828,15 @@ img, .card-img { max-width: 100%; }
 .site-footer .footer-brand .info .value { color: rgba(251,247,242,0.86); }
 .site-footer .footer-bottom { border-top-color: rgba(251,247,242,0.16); }
 .site-footer .footer-credit { color: rgba(251,247,242,0.62); }
+
+/* Keep every booking call-to-action consistent with the header Book button. */
+a.btn[href="#book"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--surface);
+}
+a.btn[href="#book"]:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: var(--surface);
+}
