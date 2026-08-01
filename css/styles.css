@@ -339,10 +339,36 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
 }
 
 /* ===== Location ===== */
-.location-section .wrap { max-width: 560px; text-align: center; }
-.location-section h1 { font-size: clamp(2.5rem,5vw,3.5rem); margin-bottom: 24px; }
-.location-section p { font-size: clamp(1rem,1.4vw,1.125rem); }
-.location-section .btn-row { margin-top: 32px; display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+.location-strip {
+  background: var(--accent);
+  color: var(--surface);
+  padding: clamp(1.75rem,3vw,2.75rem) 5%;
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+.location-strip-inner {
+  width: min(1280px,100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(110px,0.5fr) minmax(240px,1fr) minmax(420px,1.7fr) auto;
+  align-items: center;
+  gap: clamp(1.5rem,3vw,3.5rem);
+}
+.location-strip .eyebrow {
+  margin: 0;
+  color: rgba(251,247,242,0.72);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.location-strip h2 {
+  font-size: clamp(1.65rem,3vw,2.35rem);
+  line-height: 1.15;
+}
+.location-strip p:not(.eyebrow) {
+  color: rgba(251,247,242,0.86);
+  font-size: clamp(0.9rem,1.15vw,1.025rem);
+  line-height: 1.6;
+}
+.location-strip .btn { min-width: 112px; }
 
 /* ===== Services menu ===== */
 .services-section { overflow: hidden; }
@@ -595,6 +621,10 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
     grid-template-columns: minmax(100px,0.5fr) minmax(220px,1fr) minmax(280px,1.35fr);
     gap: 24px;
   }
+  .location-strip-inner {
+    grid-template-columns: minmax(90px,0.45fr) minmax(180px,0.9fr) minmax(260px,1.4fr) auto;
+    gap: 20px;
+  }
 
   .approach-box { grid-template-columns: 1fr; }
   .approach-tablist { flex-direction: row; flex-wrap: wrap; border-right: none; border-bottom: 1px solid rgba(0,2,3,0.15); }
@@ -624,6 +654,15 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
   .approach-strip h2 { max-width: 18ch; }
   .approach-strip p:last-child { max-width: 52ch; }
 
+  .location-strip { padding-block: 28px; }
+  .location-strip-inner {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .location-strip h2 { max-width: 18ch; }
+  .location-strip p:not(.eyebrow) { max-width: 52ch; }
+  .location-strip .btn { width: 100%; margin-top: 12px; }
+
   .hero-copy-panel {
     padding: 28px 20px;
     background: rgba(0,35,54,0.46);
@@ -642,9 +681,6 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
 
   .hero-content .btn-row { width: 100%; flex-direction: column; gap: 12px; }
   .hero-content .btn-row .btn { width: 100%; }
-
-  .location-section .btn-row { width: 100%; flex-direction: column; gap: 12px; }
-  .location-section .btn-row .btn { width: 100%; }
 
   .menu-card, .team-card { flex-basis: 72vw; max-width: 260px; }
   .gallery-card { flex-basis: 82vw; max-width: 340px; }
