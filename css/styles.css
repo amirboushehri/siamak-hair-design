@@ -802,7 +802,6 @@ img, .card-img { max-width: 100%; }
 .team-section .btn-outline { color: var(--accent); border-color: rgba(0,34,49,0.3); }
 .team-section .btn-outline:hover { background: rgba(0,34,49,0.06); }
 
-.approach-services,
 .services-section,
 .values-section,
 .testimonial-section,
@@ -810,6 +809,7 @@ img, .card-img { max-width: 100%; }
   background: var(--accent);
   color: var(--surface);
 }
+.approach-services { background: var(--surface); color: var(--accent); }
 .services-section .from-label,
 .testimonial-intro p,
 .contact-item p {
