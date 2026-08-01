@@ -757,3 +757,80 @@ img, .card-img { max-width: 100%; }
 @media(max-width:600px){
   .book-embed{ max-width: 620px; height: 920px; }
 }
+
+/* ===== Inverted section palette (hero remains unchanged) ===== */
+.approach-strip,
+.location-strip,
+.gallery-section,
+.team-section,
+.booking-section,
+.site-footer {
+  background: var(--surface);
+  color: var(--accent);
+}
+
+.approach-strip .eyebrow,
+.location-strip .eyebrow,
+.gallery-intro .eyebrow,
+.team-intro .eyebrow {
+  color: rgba(0,34,49,0.62);
+}
+.approach-strip p:last-child,
+.location-strip p:not(.eyebrow),
+.gallery-intro p:not(.eyebrow),
+.team-intro p:not(.eyebrow),
+.team-card .bio,
+.team-join p,
+.booking-section .cta-box p {
+  color: rgba(0,34,49,0.8);
+}
+.booking-section .cta-box { color: var(--accent); }
+.location-strip { border-top-color: rgba(0,34,49,0.12); }
+.location-strip .btn-white { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.gallery-card img,
+.team-photo,
+.team-avatar { border-color: rgba(0,34,49,0.15); }
+.gallery-section .round-btn,
+.team-section .round-btn { border-color: rgba(0,34,49,0.3); color: var(--accent); }
+.gallery-section .chevron,
+.team-section .chevron { border-color: var(--accent); }
+.gallery-section .dot,
+.team-section .dot { background: rgba(0,34,49,0.22); }
+.gallery-section .dot.active,
+.team-section .dot.active { background: var(--accent); }
+.team-card .role { color: rgba(0,34,49,0.62); }
+.team-section .btn-outline { color: var(--accent); border-color: rgba(0,34,49,0.3); }
+.team-section .btn-outline:hover { background: rgba(0,34,49,0.06); }
+
+.approach-services,
+.services-section,
+.values-section,
+.testimonial-section,
+.contact-section {
+  background: var(--accent);
+  color: var(--surface);
+}
+.services-section .from-label,
+.testimonial-intro p,
+.contact-item p {
+  color: rgba(251,247,242,0.76);
+}
+.services-section .round-btn,
+.testimonial-section .round-btn { border-color: rgba(251,247,242,0.4); color: var(--surface); }
+.services-section .chevron,
+.testimonial-section .chevron { border-color: var(--surface); }
+.services-section .dot,
+.testimonial-section .dot { background: rgba(251,247,242,0.28); }
+.services-section .dot.active,
+.testimonial-section .dot.active { background: var(--surface); }
+.contact-icon,
+.contact-item a.link { color: var(--surface); }
+.contact-map { border-color: rgba(251,247,242,0.18); }
+
+.site-footer .footer-box { color: var(--accent); }
+.site-footer .footer-brand .logo img,
+.site-footer .footer-credit img { filter: none; }
+.site-footer .footer-brand .info .label { color: rgba(0,34,49,0.62); }
+.site-footer .footer-brand .info .value { color: rgba(0,34,49,0.8); }
+.site-footer .footer-bottom { border-top-color: rgba(0,34,49,0.15); }
+.site-footer .footer-credit { color: rgba(0,34,49,0.62); }
