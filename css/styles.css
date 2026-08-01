@@ -409,6 +409,9 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
 .gallery-section .dot { background: rgba(251,247,242,0.28); }
 .gallery-section .dot.active { background: var(--surface); }
 
+.location-address { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.location-address:hover { color: #FFFFFF; }
+
 /* Balance the transition from booking to contact. */
 .booking-section { padding-bottom: clamp(2.5rem,4vw,4rem); }
 
