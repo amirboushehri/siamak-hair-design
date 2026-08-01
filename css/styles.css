@@ -474,12 +474,6 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
 .team-section .chevron { border-color: var(--surface); }
 .team-section .dot { background: rgba(251,247,242,0.28); }
 .team-section .dot.active { background: var(--surface); }
-.team-join { margin-top: 56px; max-width: 420px; }
-.team-join h4 { font-size: clamp(1.5rem,3vw,2rem); margin-bottom: 16px; }
-.team-join p { font-size: clamp(1rem,1.4vw,1.125rem); color: rgba(251,247,242,0.86); }
-.team-join .cta { margin-top: 24px; }
-.team-section .btn-outline { color: var(--surface); border-color: rgba(251,247,242,0.45); }
-.team-section .btn-outline:hover { background: rgba(251,247,242,0.1); }
 
 /* ===== Testimonials ===== */
 .testimonial-section { overflow: hidden; }
@@ -791,7 +785,6 @@ img, .card-img { max-width: 100%; }
 .gallery-intro p:not(.eyebrow),
 .team-intro p:not(.eyebrow),
 .team-card .bio,
-.team-join p,
 .booking-section .cta-box p { color: rgba(0,34,49,0.8); }
 .booking-section .cta-box { color: var(--accent); }
 .location-strip .btn-white {
@@ -821,8 +814,6 @@ img, .card-img { max-width: 100%; }
 .testimonial-section .dot.active { background: var(--accent); }
 .contact-icon,
 .contact-item a.link { color: var(--accent); }
-.team-section .btn-outline { color: var(--accent); border-color: rgba(0,34,49,0.3); }
-
 .site-footer { background: var(--accent); color: var(--surface); }
 .site-footer .footer-box { color: var(--surface); }
 .site-footer .footer-brand .logo img,
