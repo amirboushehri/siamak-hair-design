@@ -9,7 +9,7 @@
 html { -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
 body {
   font-family: 'Montserrat', sans-serif; color: #000203; background: var(--surface); overflow-x: hidden;
-  --surface: #FBF7F2; --panel: #EFE6DC; --accent: #002336; --accent-hover: #001C2B; --cta-pad: clamp(1.5rem,3vw,2rem); --hero-speed: 5000ms;
+  --surface: #FBF7F2; --panel: #FBF7F2; --accent: #002336; --accent-hover: #001C2B; --cta-pad: clamp(1.5rem,3vw,2rem); --hero-speed: 5000ms;
 }
 img { display: block; max-width: 100%; }
 button { font-family: inherit; cursor: pointer; }
@@ -232,7 +232,7 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
 .approach-tab {
   text-align: left; padding: 20px 28px; border: none; border-bottom: 1px solid rgba(0,2,3,0.15);
   font-family: 'Montserrat Alternates', sans-serif; font-size: clamp(1.25rem,2vw,1.5rem);
-  background: var(--surface); color: #000203;
+  background: var(--surface); color: var(--accent);
 }
 .approach-tab:last-child { flex: 1; }
 .approach-tab.active { background: var(--panel); }
@@ -241,6 +241,32 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
 .approach-panel p { font-size: clamp(1rem,1.4vw,1.125rem); }
 .approach-panel .btn-row { margin-top: 32px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 .view-link { display: inline-flex; align-items: center; gap: 8px; font-weight: 500; font-size: clamp(0.875rem,1.2vw,1rem); }
+
+.approach-box,
+.value-card,
+.testimonial-card,
+.cta-box,
+.footer-box {
+  color: var(--accent);
+}
+.approach-box .icon-circle,
+.value-card .icon-circle {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.approach-box .chevron,
+.value-card .chevron,
+.cta-box .chevron,
+.footer-box .chevron {
+  border-color: var(--accent);
+}
+.approach-box .btn-outline,
+.value-card .btn-outline,
+.cta-box .btn-outline,
+.footer-box .btn-outline {
+  color: var(--accent);
+  border-color: var(--accent);
+}
 
 /* ===== Location ===== */
 .location-section .wrap { max-width: 560px; text-align: center; }
