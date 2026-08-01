@@ -9,7 +9,7 @@
 html { -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
 body {
   font-family: 'Montserrat', sans-serif; color: #000203; background: var(--surface); overflow-x: hidden;
-  --surface: #FBF7F2; --accent: #002336; --accent-hover: #001C2B; --cta-pad: clamp(1.5rem,3vw,2rem); --hero-speed: 5000ms;
+  --surface: #FBF7F2; --panel: #EFE6DC; --accent: #002336; --accent-hover: #001C2B; --cta-pad: clamp(1.5rem,3vw,2rem); --hero-speed: 5000ms;
 }
 img { display: block; max-width: 100%; }
 button { font-family: inherit; cursor: pointer; }
@@ -21,7 +21,7 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
   width: 100%;
   object-fit: cover;
   border: 1px solid rgba(0,2,3,0.15);
-  background: #F2F2F2;
+  background: var(--panel);
 }
 
 .btn {
@@ -227,7 +227,7 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
 .hero-tab-fill { display: block; height: 100%; background: #FFFFFF; width: 0%; }
 
 /* ===== Approach tabs ===== */
-.approach-box { border: 1px solid rgba(0,2,3,0.15); background: #F2F2F2; display: grid; grid-template-columns: minmax(220px,1fr) 1.6fr; overflow: hidden; }
+.approach-box { border: 1px solid rgba(0,2,3,0.15); background: var(--panel); display: grid; grid-template-columns: minmax(220px,1fr) 1.6fr; overflow: hidden; }
 .approach-tablist { display: flex; flex-direction: column; border-right: 1px solid rgba(0,2,3,0.15); background: var(--surface); }
 .approach-tab {
   text-align: left; padding: 20px 28px; border: none; border-bottom: 1px solid rgba(0,2,3,0.15);
@@ -235,7 +235,7 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
   background: var(--surface); color: #000203;
 }
 .approach-tab:last-child { flex: 1; }
-.approach-tab.active { background: #F2F2F2; }
+.approach-tab.active { background: var(--panel); }
 .approach-panel { padding: clamp(2rem,4vw,4rem); display: flex; flex-direction: column; justify-content: center; }
 .approach-panel h3 { font-size: clamp(2rem,4vw,2.5rem); margin-bottom: 20px; }
 .approach-panel p { font-size: clamp(1rem,1.4vw,1.125rem); }
@@ -276,7 +276,7 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
 /* ===== Values ===== */
 .values-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(320px,1fr)); gap: 32px; align-items: stretch; }
 .values-col { display: flex; flex-direction: column; gap: 32px; height: 100%; }
-.value-card { border: 1px solid rgba(0,2,3,0.15); background: #F2F2F2; display: flex; flex-direction: column; }
+.value-card { border: 1px solid rgba(0,2,3,0.15); background: var(--panel); display: flex; flex-direction: column; }
 .value-card .card-img.wide { aspect-ratio: 16/9; }
 .value-card .body { padding: clamp(1.5rem,3vw,3rem); }
 .value-card .body h2 { font-size: clamp(2rem,4vw,2.5rem); margin-bottom: 20px; }
@@ -309,7 +309,7 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
   border: 1px solid rgba(0,2,3,0.15);
   background:
     linear-gradient(135deg, rgba(255,255,255,0.6), rgba(255,255,255,0)),
-    #F2F2F2;
+    var(--panel);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -323,7 +323,7 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
   margin-bottom: 20px;
   object-fit: cover;
   border: 1px solid rgba(0,2,3,0.15);
-  background: #F2F2F2;
+  background: var(--panel);
 }
 .team-card .name { font-size: clamp(1.125rem,1.5vw,1.25rem); font-weight: 600; }
 .team-card .role { font-size: clamp(1rem,1.4vw,1.125rem); color: #4C4D4E; }
@@ -341,7 +341,7 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
 .testimonial-intro h2 { font-size: clamp(2.25rem,4.5vw,3rem); margin-bottom: 24px; }
 .testimonial-intro p { font-size: clamp(1rem,1.4vw,1.125rem); }
 .testimonial-card {
-  flex: 0 0 340px; scroll-snap-align: start; border: 1px solid rgba(0,2,3,0.15); background: #F2F2F2;
+  flex: 0 0 340px; scroll-snap-align: start; border: 1px solid rgba(0,2,3,0.15); background: var(--panel);
   padding: 32px; display: flex; flex-direction: column; justify-content: space-between;
 }
 .testimonial-card .stars {
@@ -366,7 +366,7 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
 
 /* ===== CTA ===== */
 .cta-box {
-  border: 1px solid rgba(0,2,3,0.15); background: #F2F2F2; padding: var(--cta-pad);
+  border: 1px solid rgba(0,2,3,0.15); background: var(--panel); padding: var(--cta-pad);
   display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap;
 }
 .cta-box .col { max-width: 480px; }
@@ -387,7 +387,7 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
 
 /* ===== Footer ===== */
 .site-footer { padding: clamp(3rem,5vw,5rem) 5%; }
-.footer-box { border: 1px solid rgba(0,2,3,0.15); background: #F2F2F2; padding: clamp(2rem,3vw,3rem); display: grid; grid-template-columns: 1.5fr 1fr; gap: 48px; }
+.footer-box { border: 1px solid rgba(0,2,3,0.15); background: var(--panel); padding: clamp(2rem,3vw,3rem); display: grid; grid-template-columns: 1.5fr 1fr; gap: 48px; }
 .footer-brand .logo { margin-bottom: 28px; }
 .footer-brand .logo img { height: 34px; width: auto; }
 .footer-brand .info { margin-bottom: 28px; }
