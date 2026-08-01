@@ -409,8 +409,48 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
 .gallery-section .dot { background: rgba(251,247,242,0.28); }
 .gallery-section .dot.active { background: var(--surface); }
 
+/* Use the warm card shade everywhere navy is not intentionally retained. */
+.approach-strip,
+.location-strip,
+.gallery-section,
+.contact-strip,
+.approach-panel,
+.approach-tab.active {
+  background: #F3EEE8;
+  color: var(--accent);
+}
+.approach-strip .eyebrow,
+.location-strip .eyebrow,
+.gallery-intro .eyebrow { color: rgba(0,34,49,0.62); }
+.approach-strip p:last-child,
+.location-strip p:not(.eyebrow),
+.gallery-intro p:not(.eyebrow),
+.contact-strip .contact-item p { color: rgba(0,34,49,0.8); }
+.gallery-card img { border-color: rgba(0,34,49,0.15); }
+.gallery-section .round-btn { border-color: rgba(0,34,49,0.3); color: var(--accent); }
+.gallery-section .chevron,
+.approach-panel .chevron { border-color: var(--accent); }
+.gallery-section .dot { background: rgba(0,34,49,0.22); }
+.gallery-section .dot.active { background: var(--accent); }
+.contact-strip .contact-icon,
+.contact-strip .contact-item a.link,
+.approach-panel .icon-circle { color: var(--accent); border-color: var(--accent); }
+.approach-panel .view-link { color: var(--accent); }
+.approach-panel a.btn[href="#book"],
+.location-strip a.btn[href="#book"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--surface);
+}
+.approach-panel a.btn[href="#book"]:hover,
+.location-strip a.btn[href="#book"]:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: var(--surface);
+}
+
 .location-address { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
-.location-address:hover { color: #FFFFFF; }
+.location-address:hover { color: var(--accent-hover); }
 
 /* Balance the transition from booking to contact. */
 .booking-section { padding-bottom: clamp(2.5rem,4vw,4rem); }
