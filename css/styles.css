@@ -415,7 +415,7 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
 /* ===== Values ===== */
 .values-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(320px,1fr)); gap: 32px; align-items: stretch; }
 .values-col { display: flex; flex-direction: column; gap: 32px; height: 100%; }
-.value-card { border: 1px solid rgba(0,2,3,0.15); background: var(--panel); display: flex; flex-direction: column; }
+.value-card { border: 1px solid rgba(0,2,3,0.15); background: #F3EEE8; display: flex; flex-direction: column; }
 .value-card .card-img.wide { aspect-ratio: 16/9; }
 .value-card .body { padding: clamp(1.5rem,3vw,3rem); }
 .value-card .body h2 { font-size: clamp(2rem,4vw,2.5rem); margin-bottom: 20px; }
