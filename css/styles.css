@@ -409,6 +409,9 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
 .gallery-section .dot { background: rgba(251,247,242,0.28); }
 .gallery-section .dot.active { background: var(--surface); }
 
+/* Balance the transition from booking to contact. */
+.booking-section { padding-bottom: clamp(2.5rem,4vw,4rem); }
+
 /* Give the booking subheader room before the embedded form begins. */
 .booking-section .book-embed { margin-top: 32px; }
 
@@ -520,7 +523,12 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
 .contact-item h3 { font-size: clamp(1.5rem,3vw,2rem); margin-bottom: 12px; font-weight: 400; }
 .contact-item p { font-size: clamp(0.9375rem,1.2vw,1.0625rem); margin-bottom: 20px; color: #6B6C6D; line-height: 1.6; }
 .contact-item a.link { text-decoration: underline; font-size: clamp(0.9375rem,1.2vw,1.0625rem); color: var(--accent); }
-.contact-map { margin-top: 48px; aspect-ratio: 16/5; font-size: 13px; border: 1px solid rgba(0,2,3,0.15); overflow: hidden; }
+.contact-strip { padding: clamp(2.5rem,4vw,4rem) 5%; background: var(--accent); color: var(--surface); }
+.contact-strip .contact-icon,
+.contact-strip .contact-item a.link { color: var(--surface); }
+.contact-strip .contact-item p { color: rgba(251,247,242,0.8); }
+.contact-map-wrap { padding: clamp(4rem,5vw,5rem) 5% clamp(4rem,6vw,6rem); }
+.contact-map { aspect-ratio: 16/5; font-size: 13px; border: 1px solid rgba(0,2,3,0.15); overflow: hidden; }
 .icon-envelope { width: 20px; height: 14px; border: 1.5px solid #000203; }
 .icon-dot { width: 16px; height: 16px; border-radius: 50%; border: 1.5px solid #000203; }
 .icon-diamond { width: 16px; height: 16px; border: 1.5px solid #000203; transform: rotate(45deg); }
