@@ -235,7 +235,7 @@ h1, h2, h3, h4 { font-family: 'Montserrat Alternates', sans-serif; font-weight: 
   background: var(--surface); color: var(--accent);
 }
 .approach-tab:last-child { flex: 1; }
-.approach-tab.active { background: var(--panel); }
+.approach-tab.active { background: var(--accent); color: var(--surface); }
 .approach-panel { padding: clamp(2rem,4vw,4rem); display: flex; flex-direction: column; justify-content: center; }
 .approach-panel h3 { font-size: clamp(2rem,4vw,2.5rem); margin-bottom: 20px; }
 .approach-panel p { font-size: clamp(1rem,1.4vw,1.125rem); }
